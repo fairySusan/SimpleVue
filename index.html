@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleVue</title>
+</head>
+<body>
+  <div id="app">
+    <h6>--------------------{{}}语法测试---------------------------</h6>
+    <h1>{{title}}</h1>
+    <br/>
+    <h6>----------------------双向绑定测试-----------------------------</h6>
+    <input type="text" name="" id="" v-model="name">
+    <span>{{name}}</span>
+    <br/>
+    <h6>---------------------computed 属性测试-------------------------</h6>
+    firstName: <input type="text" name="" id="" v-model="firstName"> <br/>
+    secondName: <input type="text" name="" id="" v-model="secondName">
+    <span>{{fullName}}</span>
+    <br/>
+    <h6>---------------------事件绑定测试---------------------------------</h6>
+    <button v-on:click="clickMe">计数</button>
+    <span>{{count}}</span>
+  </div>
+  <script src="./src/main.js"></script>
+</body>
+</html>

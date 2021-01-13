@@ -1,0 +1,14 @@
+{
+  "name": "simple-vue",
+  "version": "1.0.0",
+  "description": "对vue的简单实现",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  }
+}
