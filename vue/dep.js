@@ -1,4 +1,4 @@
-// 发布订阅模式
+// 发布订阅模式, 发布者
 class Dep {
 	constructor() {
 		this.subs = [];
