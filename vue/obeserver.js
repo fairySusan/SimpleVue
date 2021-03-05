@@ -24,7 +24,7 @@ class Observer {
 			configurable: true,
 			get() {
 				if (Dep.target) {
-					dep.addSub(Dep.target);
+					dep.addSub(Dep.target); // 重点： 这是Observer这个类最重要的作用
 				}
 				return value;
 			},
@@ -33,7 +33,7 @@ class Observer {
 					return false;
 				}
 				value = newVal;
-				dep.notify(); // 数据改变，发布消息通知跟这个响应式属性关联的视图变化
+				dep.notify(); // 重点：这是Observer这个类最重要的作用。数据改变，发布消息通知跟这个响应式属性关联的视图变化
 			}
 		});
 	}
